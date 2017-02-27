@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<label>请输入今天的空气质量:<input type="text" id="aqi-input"></label>
+	<button id="button" onclick="copy()">确认</button>
+	<div>你输入的值是： <span id="aqi-display"></span></div>
+	<script type="text/javascript">
+		function copy(){
+			if(document.getElementById('aqi-input').value != 0){
+				document.getElementById('aqi-display').innerHTML = document.getElementById('aqi-input').value;
+			}else{
+				document.getElementById('aqi-display').innerHTML = "尚无输入！";
+			}
+		};
+	</script>
+</body>
+</html>
